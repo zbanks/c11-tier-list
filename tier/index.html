@@ -94,6 +94,7 @@
 					<button id="switchGGREV">Guilty Gear Xrd -Revelator-</button>
 					<button id="switchBrawlhalla">Brawlhalla</button>
 					<button id="switchCorrinMode">SSB4 - Corrin Mode</button>
+					<button id="switchRoA">Rivals Of Aether</button>
 					<button id="switchOW">Overwatch</button>
 				</div>
 				<p><strong>Changing your game will empty your tierlist!</strong> Do not click unless you are sure you want to change! You cannot undo this.</p>
@@ -150,6 +151,7 @@
 		var gameCorrinMode = ["ssb4r","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm"];
 		var gameOW = ["ow","ana","bastion","doomfist","dva","genji","hanzo","junkrat","lucio","mccree","mei","mercy","orisa","pharah","reaper","reinhardt","roadhog","soldier","sombra","symmetra","torbjorn","tracer","widowmaker","winston","zarya","zenyatta"];
 		var gameBrawlhalla = ["bh","ada","asuri","azoth","barraza","bodvar","brynn","cassidy","diana","ember","gnash","hattori","jhala","koji","kor","lordvraxx","lucien","orion","queennai","ragnir","scarlet","sentinel","sirroland","teros","thatch","ulgrim","val","wushang","axe","bow","gauntlet","gun","hammer","katar","lance","spear","sword"];
+		var gameRoA = ["zetterburn", "orcane", "wrastor", "kragg", "forsburn", "maypul", "absa", "etalus", "oriandsein", "ranno", "clairen"];
 		
 		var singleTier = "<tr><td class='labelHolder' contenteditable='true' style='background-color:#FFFF7F'><span class='label'>NEW</span></td><td><div class='tier sort' id='rows'><div class='hiddenkid'></div></div></td><td><div id='settings'></div><div id='moveButtons'><div id='moveUp'></div><div id='moveDown'></div></div></td></tr>";
 		
@@ -238,6 +240,7 @@
 				case "switchCrusade": changeGame(gameCrusade);break;
 				case "switchBrawlhalla": changeGame(gameBrawlhalla);break;
 				case "switchCorrinMode": changeGame(gameCorrinMode);break;
+				case "switchRoA": changeGame(gameRoA);break;
 				case "switchOW": changeGame(gameOW);break;
 			}
 		});
@@ -322,6 +325,7 @@
 					case "ssf2": changeGame(gameSSF2);break;
 					case "SSF2Photos": changeGame(gameSSF2Photos);break;
 					case "bh": changeGame(gameBrawlhalla);break;
+					case "RoA": changeGame(gameRoA);break;
 					case "ow": changeGame(gameOW);break;
 					case "crusade": changeGame(gameCrusade);break;
 				}
@@ -429,6 +433,7 @@
 				case "SSF1": changeGame(gameSSF1);break;
 				case "ssf2": changeGame(gameSSF2);break;
 				case "SSF2Photos": changeGame(gameSSF2Photos);break;
+				case "RoA": changeGame(gameRoA);break;
 				case "bh": changeGame(gameBrawlhalla);break;
 				case "ow": changeGame(gameOW);break;
 				case "crusade": changeGame(gameCrusade);break;
