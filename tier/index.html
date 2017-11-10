@@ -91,6 +91,9 @@
 					<button id="switchBrawlMinus">Brawl Minus</button>
 					<button id="switchBrawlZeus">Brawl Zeus</button>
 					<button id="switchRoA">Rivals Of Aether</button>
+					<button id="switchUSF2">Ultra Street Fighter II</button>
+					<button id="switchSF33S">Street Fighter III - 3rd Strike</button>
+					<button id="switchUSF4">Ultra Street Fighter IV</button>
 					<button id="switchSFV">Street Fighter V</button>
 					<button id="switchGGREV">Guilty Gear Xrd -Revelator-</button>
 					<button id="switchBrawlhalla">Brawlhalla</button>
@@ -142,6 +145,9 @@
 		var gamePM = ["pm","wario","mario","luigi","peach","bowser","yoshi","donkeykong","diddykong","falcon","wolf","fox","falco","icies","zelda","sheik","link","toonlink","ganon","mewtwo","lucario","pikachu","jigglypuff","squirtle","ivysaur","charizard","samus","zerosuit","lucas","ness","pit","kirby","metaknight","dedede","ike","marth","roy","olimar","rob","gnw","snake","sonic"];
 		var gameBrawlMinus = ["bminus","mario","luigi","peach","bowser","yoshi","donkeykong","diddy","wario","waluigi","link","zelda","sheik","ganondorf","toonlink","samus","zss","ness","lucas","pikachu","jigglypuff","pichu","mewtwo","squirtle","ivysaur","charizard","lucario","kirby","dedede","mk","fox","falco","wolf","marth","roy","ike","captainfalcon","gnw","iceclimbers","rob","pit","olimar","snake","sonic"];
 		var gameBrawlZeus = ["zeus","mario","luigi","peach","koopa","yoshi","dk","dd","wario","link","zelda","sheik","ganon","tlik","samus","zss","ness","lucas","pikachu","pichu","purin","m2","zenigame","fushigisou","lizardon","lucario","kirby","ddd","MK","fox","falco","wolf","marth","roy","ike","lucina","wayu","cf","gw","rob","pit","olimar","snake","sonic","4cloud","blackpit","cloudminus","geno","knuckles","lyn","mac","meta","ridley","ryu","shadow","shulk"];
+		var gameUSF2 = ["USF2","akuma","balrog","blanka","cammy","chun-li","dee-jay","dhalsim","ehonda","evil-ryu", "fei-long","guile","ken","m-bison","ryu","sagat","t-hawk","vega","violent-ken","zangief"];
+		var gameSF33S = ["SF33S","akuma","alex","chun-li","dudley","elena","hugo","ibuki","ken","makoto","necro","oro","q","remy","ryu","sean","twelve","urien","yang","yun"];
+		var gameUSF4 = ["USF4","abel","adon","akuma","balrog","blanka","cammy","chunli","cody","cviper","dan","decapre","deejay","dudley","ehonda","elena","elfuerte","evilryu","feilong","gen","gouken","guile","guy","hakan","ibuki","juri","ken","makoto","mbison","oni","poison","rolento","rose","rufus","ryu","sagat","sakura","seth","thawk","vega","yang","yun","zangief"];
 		var gameSFV = ["sfv","abigail","alex","akuma","balrog","birdie","cammy","chunli","dhalsim","ed","fang","guile","ibuki","juri","karin","ken","kolin","laura","mbison","menat","nash","necalli","rashid","rmika","ryu","urien","vega","zangief","zeku"];
 		var gameGGREV = ["ggrev","axl","bedman","chipp","elphelt","faust","ino","jacko","jam","johnny","kum","ky","leo","may","millia","potemkin","ramlethal","raven","sin","slayer","sol","venom","zato1","dizzy"];
 		var gameSSF1 = ["SSF1","mario", "luigi", "link", "zelda", "sheik", "younglink", "samus", "kirby", "metaknight", "fox", "pikachu", "jigglypuff", "mewtwo", "falcon", "mrgameandwatch", "sonic", "tails", "knuckles", "shadow", "supersonic", "megamanx", "zero", "lloyd", "cloud", "crono", "inuyasha", "naruto", "mrincredible", "blade", "blue"];
@@ -232,6 +238,9 @@
 				case "switchBrawlZeus": changeGame(gameBrawlZeus);break;
 				case "switchSmash4": changeGame(gameSmash4);break;
 				case "switchSSB4Renders": changeGame(gameSSB4Renders);break;
+				case "switchUSF2": changeGame(gameUSF2);break;
+				case "switchSF33S": changeGame(gameSF33S);break;
+				case "switchUSF4": changeGame(gameUSF4);break;
 				case "switchSFV": changeGame(gameSFV);break;
 				case "switchGGREV": changeGame(gameGGREV);break;
 				case "switchSSF1": changeGame(gameSSF1);break;
@@ -319,6 +328,9 @@
 					case "zeus": changeGame(gameBrawlZeus);break;
 					case "pm": changeGame(gamePM);break;
 					case "ssb4": changeGame(gameSmash4);break;
+					case "USF2": changeGame(gameUSF2);break;
+					case "SF33S": changeGame(gameSF33S);break;
+					case "USF4": changeGame(gameUSF4);break;
 					case "sfv": changeGame(gameSFV);break;
 					case "ggrev": changeGame(gameGGREV);break;
 					case "SSF1": changeGame(gameSSF1);break;
@@ -428,6 +440,9 @@
 				case "pm": changeGame(gamePM);break;
 				case "ssb4": changeGame(gameSmash4);break;
 				case "ssb4r": changeGame(gameSSB4Renders);break;
+				case "USF2": changeGame(gameUSF2);break;
+				case "SF33S": changeGame(gameSF33S);break;
+				case "USF4": changeGame(gameUSF4);break;
 				case "sfv": changeGame(gameSFV);break;
 				case "ggrev": changeGame(gameGGREV);break;
 				case "SSF1": changeGame(gameSSF1);break;
