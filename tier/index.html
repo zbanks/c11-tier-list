@@ -84,6 +84,7 @@
 					<button id="switchSmash4">Super Smash Bros. 4 (Screenshots)</button>
 					<button id="switchSSB4Renders">Super Smash Bros. 4 (Renders)</button>
 					<button id="switchSSB4Inktober">Super Smash Bros. 4 (Inktober 2017)</button>
+					<button id="switchSSBU">Super Smash Bros. Ultimate (In Progress)</button>
 					<button id="switchPM">Project M</button>
 					<button id="switchSSF1">Super Smash Flash</button>
 					<button id="switchSSF2">Super Smash Flash 2</button>
@@ -92,12 +93,12 @@
 					<button id="switchBrawlMinus">Brawl Minus</button>
 					<button id="switchBrawlZeus">Brawl Zeus</button>
 					<button id="switchRoA">Rivals Of Aether</button>
-					<button id="switchUSF2">Ultra Street Fighter II</button>
-					<button id="switchSF33S">Street Fighter III - 3rd Strike</button>
-					<button id="switchUSF4">Ultra Street Fighter IV</button>
-					<button id="switchSFV">Street Fighter V</button>
-					<button id="switchMKX">Mortal Kombat X</button>
-					<button id="switchINJ">Injustice: Gods Among Us</button>
+					<button id="switchUSF2">Street Fighter II Series</button>
+					<button id="switchSF33S">Street Fighter III Series</button>
+					<button id="switchUSF4">Ultra Street Fighter IV Series</button>
+					<button id="switchSFV">Street Fighter V: Arcade Edition</button>
+					<button id="switchMKX">Mortal Kombat X (In Progress)</button>
+					<button id="switchINJ">Injustice: Gods Among Us (In Progress)</button>
 					<button id="switchINJ2">Injustice 2</button>
 					<button id="switchGGREV">Guilty Gear Xrd -Revelator-</button>
 					<button id="switchBrawlhalla">Brawlhalla</button>
@@ -144,6 +145,7 @@
 		var gameSmash4 = ["ssb4","mario","luigi","peach","bowser","yoshi","rosalinaluma","bowserjr","drmario","wario","donkeykong","diddykong","mrgamewatch","littlemac","link","zelda","sheik","ganondorf","toonlink","samus","zerosuitsamus","pit","palutena","darkpit","marth","ike","robin","lucina","roy","corrin","duckhunt","kirby","kingdedede","metaknight","fox","falco","pikachu","charizard","lucario","jigglypuff","greninja","mewtwo","rob","ness","lucas","captainfalcon","villager","olimar","wiifittrainer","shulk","pacman","megaman","ryu","sonic","cloud","bayonetta","miibrawler1","miigunner1","miisword1","miibrawler","miigunner","miisword"];
 		var gameSSB4Renders = ["ssb4r","mario","luigi","peach","bowser","yoshi","rosalinaluma","bowserjr","wario","donkeykong","diddykong","mrgamewatch","littlemac","link","zelda","sheik","ganondorf","toonlink","samus","zerosuitsamus","pit","palutena","marth","ike","robin","duckhunt","kirby","kingdedede","metaknight","fox","falco","pikachu","charizard","lucario","jigglypuff","greninja","rob","ness","captainfalcon","villager","olimar","wiifittrainer","shulk","drmario","darkpit","lucina","pacman","megaman","sonic","mewtwo","lucas","roy","ryu","cloud","corrin","bayonetta","miibrawler1","miigunner1","miisword1","miibrawler","miigunner","miisword"];
 		var gameSSB4Inktober = ["ssb4inktober","mario","luigi","peach","bowser","yoshi","rosalina","bowserjr","drmario","wario","dk","diddykong","gameandwatch","littlemac","link","zelda","sheik","ganondorf","toonlink","samus","zerosuitsamus","pit","palutena","darkpit","marth","ike","robin","lucina","roy","corrin","duckhunt","kirby","dedede","metaknight","fox","falco","pikachu","charizard","lucario","jigglypuff","greninja","mewtwo","rob","ness","lucas","falcon","villager","olimar","wiifittrainer","shulk","pacman","megaman","ryu","sonic","cloud","bayonetta","miibrawler","miigunner","miiswordfighter","miibrawler1111","miigunner1111","miiswordfighter1111"];
+		var gameSSBU = ["SSBU", "mario", "dk", "link", "samus", "yoshi", "kirby", "fox", "pikachu", "luigi", "ness", "falcon", "jigglypuff", "peach", "daisy", "bowser", "iceclimbers", "sheik", "zelda", "drmario", "pichu", "falco", "marth", "lucina", "younglink", "ganondorf", "mewtwo", "roy", "gameandwatch", "metaknight", "pit", "darkpit", "zss", "wario", "snake", "ike", "pokemontrainer", "squirtle", "ivysaur", "charizard", "diddykong", "lucas", "sonic", "kingdedede", "olimar", "rob", "toonlink", "wolf", "villager", "megaman", "wiifittrainer", "rosalina", "littlemac", "greninja", "miibrawler", "miigunner", "miiswordfighter", "palutena", "pacman", "robin", "shulk", "bowserjr", "duckhunt", "ryu", "cloud", "corrin", "bayonetta", "inkling", "ridley"];
 		var gameMelee = ["melee","drmario","mario","luigi","bowser","peach","yoshi","dk","falcon","ganon","falco","fox","ness","icies","kirby","samus","zelda","sheik","link","ylink","pichu","pikachu","jigglypuff","mewtwo","gnw","marth","roy"];
 		var game64 = ["64","luigi","mario","dk","link","samus","falcon","ness","yoshi","kirby","fox","pikachu","jigglypuff"];
 		var gameBrawl = ["brawl","mario","luigi","peach","bowser","donkeykong","diddykong","yoshi","wario","link","zelda","sheik","ganondorf","toonlink","samus","zerosuitsamus","pit","iceclimbers","rob","kirby","metaknight","kingdedede","olimar","fox","falco","wolf","captainfalcon","pikachu","pokemontrainer","lucario","jigglypuff","marth","ike","ness","lucas","mrgamewatch","snake","sonic"];
@@ -245,6 +247,7 @@
 				case "switchBrawlMinus": changeGame(gameBrawlMinus);break;
 				case "switchBrawlZeus": changeGame(gameBrawlZeus);break;
 				case "switchSmash4": changeGame(gameSmash4);break;
+				case "switchSSBU": changeGame(gameSSBU);break;
 				case "switchSSB4Renders": changeGame(gameSSB4Renders);break;
 				case "switchSSB4Inktober": changeGame(gameSSB4Inktober);break;
 				case "switchUSF2": changeGame(gameUSF2);break;
@@ -341,6 +344,7 @@
 					case "pm": changeGame(gamePM);break;
 					case "ssb4": changeGame(gameSmash4);break;
 					case "SSB4Inktober": changeGame(SSB4Inktober);break;
+					case "SSBU": changeGame(gameSSBU);break;
 					case "USF2": changeGame(gameUSF2);break;
 					case "SF33S": changeGame(gameSF33S);break;
 					case "USF4": changeGame(gameUSF4);break;
@@ -454,6 +458,7 @@
 				case "bminus": changeGame(gameBrawlMinus);break;
 				case "zeus": changeGame(gameBrawlZeus);break;
 				case "pm": changeGame(gamePM);break;
+				case "SSBU": changeGame(gameSSBU);break;
 				case "ssb4": changeGame(gameSmash4);break;
 				case "ssb4r": changeGame(gameSSB4Renders);break;
 				case "SSB4Inktober": changeGame(SSB4Inktober);break;
