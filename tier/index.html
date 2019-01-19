@@ -88,6 +88,7 @@
 					<button id="switchPM">Project M</button>
 					<button id="switchSSF1">Super Smash Flash</button>
 					<button id="switchSSF2Photos">Super Smash Flash 2</button>
+					<button id="switchSSF2Delta">SSF2: Delta</button>
 					<button id="switchCrusade">Project Crusade</button>
 					<button id="switchBrawlMinus">Brawl Minus</button>
 					<button id="switchBrawlZeus">Brawl Zeus</button>
@@ -162,7 +163,7 @@
 		var gameINJ = ["INJ"];
 		var gameINJ2 = ["INJ2","batman","superman","wonderwoman","supergirl","aquaman","atrocitus","gorillagrodd","deadshot","harleyquinn","theflash","bluebeetle","bane","poisonivy","braniac","robin","blackcanary","swampthing","catwoman","cheetah","cyborg","doctorfate","greenlantern","firestorm","greenarrow","blackadam","captaincold","scarecrow","darkseid","joker","redhood","starfire","subzero","blackmanta","raiden","hellboy","atom","enchantress","leonardo","michelangelo","donatello","raphael"];
 		var gameSSF1 = ["SSF1","mario", "luigi", "link", "zelda", "sheik", "younglink", "samus", "kirby", "metaknight", "fox", "pikachu", "jigglypuff", "mewtwo", "falcon", "mrgameandwatch", "sonic", "tails", "knuckles", "shadow", "supersonic", "megamanx", "zero", "lloyd", "cloud", "crono", "inuyasha", "naruto", "mrincredible", "blade", "blue"];
-		var gameSSF2 = ["ssf2","1","2","3","4","5","39","6","7","8","38","9","10","11","12","13","14","Reuben","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37"];
+		var gameSSF2Delta = ["SSF2Delta","mario","luigi","peach","bowser","yoshi","classicyoshi","wario","dk","link","zelda","sheik","shielda","captainfalcon","pikachu","jigglypuff","pichu","kirby","metaknight","bandanadee","fox","falco","samus","zss","ness","marth","pit","isaac","chibirobo","mrgameandwatch","sonic","tails","megaman","pacman","lloyd","bomberman","blackmage","sora","goku","luffy","ichigo","naruto","sandbag","fancypantsman"]
 		var gameSSF2Photos = ["SSF2Photos","Mario","Luigi","Peach","Bowser","Yoshi","Wario","DK","Link","Zelda","Sheik","Shielda","Pikachu","Jigglypuff","Falcon","MrGameAndWatch","Kirby","MetaKnight","BandanaDee","Fox","Falco","Marth","Pit","Samus","ZSS","Ness","ChibiRobo","Isaac","Sonic","Tails","BlackMage","Sora","MegaMan","PAC-MAN","Lloyd","Bomberman","Ichigo","Naruto","Luffy","Goku","Sandbag","SSF2Pichu", "simonssf2", "krystal","rayman"];
 		var gameCrusade = ["crusade","mario", "drmario", "luigi", "peach", "toad", "bowser", "petey", "waluigi", "wario", "ashley", "dk", "yoshi", "geno", "pikachu", "pichu", "jigglypuff", "mewtwo", "lucario", "lucarioauraless", "snivy", "samus", "zss", "ridley", "link", "linkskills", "toonlink", "ganondorf", "tingle", "olimar", "marth", "lucina", "roy", "fox", "falco", "krystal", "falcon", "kirby", "gooey", "metaknight", "ness", "lucas", "porky", "littlemac", "littlemacwiiu", "saki", "iceclimbers", "solopopo", "sona", "rob", "duckhuntdog", "machrider", "mrgameandwatch", "snake", "bomberman", "sonic", "tails", "knuckles", "shadow", "ristar", "shantae", "negashantae", "rayman", "crash", "megaman", "ryu", "evilryu", "chunli", "phoenix", "pacman", "klonoa", "goku"]
 		var gameCorrinMode = ["ssb4r","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm"];
@@ -257,7 +258,7 @@
 				case "switchSFV": changeGame(gameSFV);break;
 				case "switchGGREV": changeGame(gameGGREV);break;
 				case "switchSSF1": changeGame(gameSSF1);break;
-				case "switchSSF2": changeGame(gameSSF2);break;
+				case "switchSSF2Delta": changeGame(gameSSF2Delta);break;
 				case "switchSSF2Photos": changeGame(gameSSF2Photos);break;
 				case "switchCrusade": changeGame(gameCrusade);break;
 				case "switchBrawlhalla": changeGame(gameBrawlhalla);break;
@@ -353,7 +354,7 @@
 					case "sfv": changeGame(gameSFV);break;
 					case "ggrev": changeGame(gameGGREV);break;
 					case "SSF1": changeGame(gameSSF1);break;
-					case "ssf2": changeGame(gameSSF2);break;
+					case "SSF2Delta": changeGame(gameSSF2Delta);break;
 					case "SSF2Photos": changeGame(gameSSF2Photos);break;
 					case "MKX": changeGame(gameMKX);break;
 					case "DBFZ": changeGame(gameDBFZ);break;
@@ -471,7 +472,7 @@
 				case "sfv": changeGame(gameSFV);break;
 				case "ggrev": changeGame(gameGGREV);break;
 				case "SSF1": changeGame(gameSSF1);break;
-				case "ssf2": changeGame(gameSSF2);break;
+				case "SSF2Delta": changeGame(gameSSF2Delta);break;
 				case "SSF2Photos": changeGame(gameSSF2Photos);break;
 				case "MKX": changeGame(gameMKX);break;
 				case "DBFZ": changeGame(gameDBFZ);break;
