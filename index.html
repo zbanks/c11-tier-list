@@ -137,12 +137,19 @@
 	<script>
 		dragula({
 			isContainer: function (el) {
-				return el.classList.contains('sort');
-			}
-		}).on("drop", function() {
-			localStorage.setItem("TierListMakerCode",toCode());
-		});
-		
+                return el.classList.contains('sort');
+            }
+        }).on('drag', function(el, source) {
+            // On mobile this prevents the default page scrolling while dragging an item.
+            $(document).on('touchstart', function(e) {
+                e.preventDefault();
+            });
+        }).on('drop', function(el, target, source, sibling) {
+            // On mobile this turns on default page scrolling after the end of a drag drop.
+            $(document).off('touchstart');
+            localStorage.setItem("TierListMakerCode",toCode());
+        });
+
 		// character images
 		var singleChar = "<div class='character'></div>";
         var gameC11 = "c11 auto break case char const continue default do double else enum extern float for goto if inline int long register restrict return short signed sizeof static struct switch typedef union unsigned void volatile while _Alignas _Alignof _Atomic _Bool _Complex _Generic _Imaginary _Noreturn _Static_assert _Thread_local".split(" ");
