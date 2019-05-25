@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-	<link rel="icon" type="image/x-icon" href= "../icon.png"/>
+	<link rel="icon" type="image/x-icon" href= "icon.png"/>
 	<title>Tier List Maker - Smash Apps</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,100italic" rel="stylesheet" type="text/css">
 	<link href="newstyle.css" rel="stylesheet">
@@ -359,7 +359,8 @@
 			});
 			for (var i = 1; i < game.length; i++) {
 				$("#char div:last-child").after(singleChar);
-				$("#char div:last-child").css("background-image","url(img/"+currentGame+"/"+game[i]+".png)");
+				//$("#char div:last-child").css("background-image","url(img/"+currentGame+"/"+game[i]+".png)");
+				$("#char div:last-child").text(game[i]);
 				$("#char div:last-child").attr("id",i);
 			}
 			$("h1 span").text(currentGame);
@@ -446,7 +447,8 @@
 				$("tr:last-of-type").find(".label").html(processedCode[i][0]);
 				for (var c = 2; c < processedCode[i].length; c++) {
 					$("tr:last-of-type").find(".tier div:last-child").after(singleChar);
-					$("tr:last-of-type").find(".tier div:last-child").css("background-image","url(img/"+processedCode[0]+"/"+currentGameChars[processedCode[i][c]]+".png)");
+					//$("tr:last-of-type").find(".tier div:last-child").css("background-image","url(img/"+processedCode[0]+"/"+currentGameChars[processedCode[i][c]]+".png)");
+					$("tr:last-of-type").find(".tier div:last-child").text(currentGameChars[processedCode[i][c]]);
 					$("tr:last-of-type").find(".tier div:last-child").attr("id",processedCode[i][c]);
 					$("#char #"+processedCode[i][c]).remove();
 				}

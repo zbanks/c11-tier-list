@@ -146,10 +146,22 @@ img {
 
 .character {
 	display:inline-block;
-	height: 64px;
-	width: 64px;
-	background-position: center;
-	background-size: cover;
+	/*height: 64px; */
+	/*width: 64px;*/
+    height: 64px;
+    line-height: 64px;
+    min-width: 64px;
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 2px;
+	/*background-position: center;*/
+	/*background-size: cover;*/
+    background-color: #fff;
+    border: 1px solid #888;
+    text-align: center;
+    color: #000;
+    font-family: Mono;
 }
 
 #overlay {
