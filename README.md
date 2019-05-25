@@ -1,14 +1,8 @@
-Smash Apps
-==========
+C11 Keywords Tier List Generator
+================================
 
-A collection of useful web apps for Super Smash Bros.
+Based on a SSB tier list generator: https://github.com/RandallStrife/smash-apps
 
-[Use them!](http://quetzle.github.io/smash-apps)
+[Use it!](http://zbanks.github.io/c11-tier-list)
 
-Currently, the apps are:
-
-* [Stage Striking](http://quetzle.github.io/smash-apps/stage) - choose what stage to play on by banning certain stages!
-* [Tier List Maker](http://quetzle.github.io/smash-apps/tier) - create a tier list to show how you think the characters stack up!
-* [Color Ranks](http://quetzle.github.io/smash-apps/colors) - choose what your favorite colors are for each character!
-* [Color Tier List Maker](http://quetzle.github.io/smash-apps/colortiers) - create a tier list of every color in the game!
-[comment]: # (Lee is total garbage lol)
+Images generated from https://dummyimage.com/
